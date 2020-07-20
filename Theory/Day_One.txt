@@ -1,0 +1,61 @@
+1. What is a DOCTYPE?
+It is a declaration(information) to the browser about what document type to expect.
+
+2. How does the web work? (https://github.com/vasanthk/how-web-works)
+
+
+3. Do older html files work on newer browsers?	
+Yes, older html files are compliant to the HTML standard. Most older files work on the newer browsers, though some features may not work
+
+4. What are the differences between different DOCTYPES (xHTML, HTML 4.01, HTML5)?
+
+
+5. Do all HTML tags come in pairs?
+No.
+There are paired tags, for example, <p></p>, <strong></strong>, <em></em>, etc. 
+Unpaired tags, in particular, <br>, <hr>.
+
+6. Why should you use different HTML5 elements in your page? What is semantic HTML? (https://www.internetingishard.com/html-and-css/semantic-html/)
+To provide element meaning and make it easier to separate parts of the webpage. 
+Semantic elements is elements wit meaning.
+
+7. Why is SEO important? What ways are there to utilize it?
+Search Engine Optimization (SEO) refers to the method used to increase a website's position on search engine results pages (SERPs) on sites such as Google, Yahoo, etc.
+Approach keywords, focus on local SEO, use original content, optimize the navigation of the website, etc.
+
+8. Should you put quotes around attribute values? Why?
+Yes, because attribute value can be made of few words, and the browser will not understand.
+
+9. How do you insert a text comment in html code?
+<!--Comment-->
+
+10. What does CSS stand for?
+Cascading Style Sheet
+
+11. What are style sheets?
+A Style Sheet is a collection of style rules that that tells a browser how the various styles are to be applied to the HTML tags to present the document.
+
+12. What is CSS positioning? What are the differences between them?
+There are five different position values: 
+static - default position, not affected by the top, bottom, left, and right properties.
+relative - relative position elements are depenedent on top, right, bottom and left properties.
+fixed - an element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. 
+absolute - an element is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed)
+sticky - A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+13. What are CSS vendor prefixes? Why are they used?
+Vendor prefixes are one way browsers use to give CSS developers access to newer features not yet considered stable.
+Before new properties are formally added to CSS, browsers have the ability to test them out using their own methods of implementation.
+
+14. What is the range for font-weight value?
+1-1000
+
+15. Can several selectors with class names be grouped together?
+You can group any number of selectors, including selectors that are single words and compound selectors
+
+16. What is responsive web design and why it’s important today?
+Essentially, responsive design is a way to put together a website so that it automatically scales its content and elements to match the screen size on which it is viewed. It's important, because people around the globe use different types and sizes of devices.
+
+17. What are different units for CSS size properties?
+Absolute lengths: cm, mm, in, px, pt, pc.
+Relative lengths: em, ex, ch, rem, vw, vh, vmin, vmax, %.
