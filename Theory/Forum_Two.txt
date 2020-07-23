@@ -24,8 +24,8 @@ A block-level element always starts on a new line and takes up the full width av
 5. What are CSS pseudo elements?
 A CSS pseudo-element is used to style specified parts of an element.
 For example, it can be used to:
-	Style the first letter, or line, of an element
-	Insert content before, or after, the content of an element
+	+ Style the first letter, or line, of an element
+	+ Insert content before, or after, the content of an element
 
 6. What are different ways to use CSS transitions?
 CSS transitions allows you to change property values smoothly, over a given duration.
