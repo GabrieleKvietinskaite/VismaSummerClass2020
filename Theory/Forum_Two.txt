@@ -1,0 +1,36 @@
+1. What is CSS box model?
+All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+
+2. What is the difference between an inline element and a block element?
+A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can). An inline element does not start on a new line and it only takes up as much width as necessary.
+
+3. What are different ways to center a nested <div> horizontally?
++ Using text-align: center
++ Using margin auto
++ Using position absolute
++ Using display flex in css.
++ Transform/Translate method
++ Display table & horizontal-align
+
+4. What are different ways to center a nested <div> vertically?
++ Absolute positioning and margin auto
++ The top 50% translate -50%
++ Display table & vertical-align
++ Margin auto on a flex-item
++ Margin auto on a grid-item
++ Align on the flex-container or the flex-item
++ Align on the grid-container or the grid-item
+
+5. What are CSS pseudo elements?
+A CSS pseudo-element is used to style specified parts of an element.
+For example, it can be used to:
+	Style the first letter, or line, of an element
+	Insert content before, or after, the content of an element
+
+6. What are different ways to use CSS transitions?
+CSS transitions allows you to change property values smoothly, over a given duration.
+transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+
+7. What does each variable in gradient definition mean?
+background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+background-image: linear-gradient(angle, color-stop1, color-stop2);
