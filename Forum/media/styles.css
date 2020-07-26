@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    height: 100%;
+    color: #6f7d95;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'menu main right'
+    'footer main right';
+    grid-template-columns: 16.6667% 66.6667% 16.6667%;
+}
+
+.header { 
+    grid-area: header; 
+    background-color: #2f364a;
+    min-height: 80px;
+    max-width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    flex-grow: 2;
+    position: relative;
+    width: 16.6667%;
+}
+
+.center {
+    flex-grow: 8;
+    width: 66.6667%;
+}
+
+.search{
+    flex-grow: 5;
+    position: relative;
+    width: 75%;
+}
+
+.navbar {
+    background-color: #19202e;
+    list-style: none;
+    text-align: center;
+    flex-grow: 3;
+    width: 25%;
+}
+
+.login {
+    flex-grow: 2;
+    width: 16.6667%;
+}
+
+.left-side-bar { 
+    grid-area: menu; 
+}
+
+
+.main { 
+    grid-area: main; 
+    border-left: 1pt solid #ced3db;
+}
+
+.all-questions {
+    width: 100%;
+    min-height: 40px;
+    border-bottom: 1pt solid #ced3db;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filter-by-category {
+    width: 15%;
+    margin-right: 30px;
+}
+
+.filter {
+    width: 100%;
+    min-height: 40px;
+    border-bottom: 1pt solid#ced3db;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chosen-per-page {
+    width: 7%;
+    margin-right: 30px;
+}
+
+.questions {
+    width: 100%;
+}
+
+.question {
+    border-bottom: 1pt solid #ced3db;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#statistics {
+    justify-content: space-around;
+    display: flex;
+}
+
+.circle {
+    border: 1px solid #ced3db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 3.3;
+}
+
+.views, .answers, .votes{
+    position: relative;
+    margin-right: 25px;
+    text-align: center;
+    transform: rotate(1deg);
+}
+
+.article-top, .article-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filled {
+    background-color: #38d996;
+    border-color: #38d996;
+    color: white;
+}
+
+.tag {
+    border: 1px solid #ced3db;
+    border-radius: 25px;
+    position: relative;
+    margin-right: 10px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.tag:hover {
+    opacity: 1
+}
+
+.tags {
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.question:nth-child(odd) {
+    background-color: #eef1f7;
+}
+
+.right-side-bar { 
+    grid-area: right; 
+    height: 100%;
+    background-color: #e1e7f0;
+    padding-left: 30px;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.unstyled {
+    list-style-type: none;
+    padding: 0;
+}
+
+#left-menu-questions::before{
+    content: url(question.png);
+}
+
+#left-menu-tags::before{
+    content: url(tag.png);
+}
+
+#left-menu-badges::before{
+    content: url(award.png);
+}
+
+#left-menu-categories::before{
+    content: url(list.png);
+}
+
+#left-menu-users::before{
+    content: url(users.png);
+}
+
+.information{
+    max-width:700px;
+}
+
+.large-font {
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.members-count {
+    border-left: 4px solid #f39c12;
+    line-height: .7;
+    padding-left: 10px;
+}
+
+.questions-count {
+    border-left: 4px solid #3498db;
+    margin-bottom: 30px;
+    line-height: .7;
+    padding-left: 10px;
+}
+
+.most-used-tags h4 {
+    color: #2c3e50;
+    border-bottom: 1px solid #dadfea;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.most-used-tags {
+    margin-top: 45px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.m-l-10 {
+    margin-left: 10px;
+}
+
+.left-side-menu ul li {
+    margin: 10px 0 10px 0;
+}
+
+.left-side-menu ul {
+    margin-left: 30px;
+}
+
+#ask-question-button {
+    margin: 30px;
+}
+
+.ask-question {
+    background-color: #008CBA;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    height: 45px;
+    display: block;
+}
+
+.left-side-menu {
+    border-top: 1px solid #dadfea;
+}
+
+.most-used-tags ul li {
+    margin-bottom: 10px;
+}

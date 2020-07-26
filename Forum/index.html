@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="media/styles.css">
     </head>
     <body>
         <div class="grid-container">
@@ -17,134 +17,199 @@
                 <div id="ask-question-button">
                     <button class="ask-question"></button>
                 </div>
-                <nav class="menu"></nav>
+                <div class="left-side-menu">
+                    <ul class="unstyled">
+                        <li id="left-menu-questions"><a class="m-l-10" href="">Questions</a></li>
+                        <li id="left-menu-tags"><a class="m-l-10" href="">Tags</a></li>
+                        <li id="left-menu-badges"><a class="m-l-10" href="">Badges</a></li>
+                        <li id="left-menu-categories"><a class="m-l-10" href="">Categories</a></li>
+                        <li id="left-menu-users"><a class="m-l-10" href="">Users</a></li>
+                    </ul>  
+                </div>
                 <div class="social-networks"></div>
             </aside>
             <main class="main">
                 <section class="all-questions">
-                    <select id="filter-by-category">
-                    </select>
+                    <h2></h2>
+                    <select id="filter-by-category"></select>
                 </section>
                 <section class="filter">
+                    <div></div>
                     <select id="chosen-per-page"></select>
                 </section>
                 <section class="questions">
-                    <article class="question flex-container darker">
+                    <article class="question">
                         <div class="article-top">
-                            <div class="information"></div>
+                            <div class="information">
+                                <h3 class="truncate">
+                                    Lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut?
+                                </h3>
+                                <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum at tempor commodo ullamcorper a.</p>
+                            </div>
                             <div id="statistics">
-                                <element class="circle views"></element>
-                                <element class="circle answers filled"></element>
-                                <element class="circle votes"></element>
+                                <div class="views">
+                                    <span class="circle">8</span>
+                                    views
+                                </div>
+                                <div class="answers">
+                                    <span class="circle filled">6</span>
+                                    answers
+                                </div>
+                                <div class="votes">
+                                    <span class="circle">19</span>
+                                    votes
+                                </div>
                             </div>
                         </div>
                         <div class="article-bottom">
                             <div class="tags">
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
+                                <div>
+                                    <button class="tag">apps</button>
+                                </div>
+                                <div>
+                                    <button class="tag">business</button>
+                                </div>
+                                <div>
+                                    <button class="tag">glass</button>
+                                </div>
+                                <div>
+                                    <button class="tag">google</button>
+                                </div>
+                                <div>
+                                    <button class="tag">tutorial</button>
+                                </div>
                             </div>
                             <div class="user"></div>
                         </div>
                     </article>
-                    <article class="question flex-container">
+                    <article class="question">
                         <div class="article-top">
-                            <div class="information"></div>
+                            <div class="information">
+                                <h3 class="truncate">
+                                    Lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut?
+                                </h3>
+                                <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum at tempor commodo ullamcorper a.</p>
+                            </div>
                             <div id="statistics">
-                                <element class="circle views"></element>
-                                <element class="circle answers"></element>
-                                <element class="circle votes"></element>
+                                <div class="views">
+                                    <span class="circle">8</span>
+                                    views
+                                </div>
+                                <div class="answers">
+                                    <span class="circle filled">6</span>
+                                    answers
+                                </div>
+                                <div class="votes">
+                                    <span class="circle">19</span>
+                                    votes
+                                </div>
                             </div>
                         </div>
                         <div class="article-bottom">
                             <div class="tags">
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
+                                <div>
+                                    <button class="tag">apps</button>
+                                </div>
+                                <div>
+                                    <button class="tag">business</button>
+                                </div>
+                                <div>
+                                    <button class="tag">glass</button>
+                                </div>
+                                <div>
+                                    <button class="tag">google</button>
+                                </div>
+                                <div>
+                                    <button class="tag">tutorial</button>
+                                </div>
                             </div>
                             <div class="user"></div>
                         </div>
                     </article>
-                    <article class="question flex-container darker">
+                    <article class="question">
                         <div class="article-top">
-                            <div class="information"></div>
+                            <div class="information">
+                                <h3 class="truncate">
+                                    Lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut?
+                                </h3>
+                                <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum at tempor commodo ullamcorper a.</p>
+                            </div>
                             <div id="statistics">
-                                <element class="circle views"></element>
-                                <element class="circle answers filled"></element>
-                                <element class="circle votes"></element>
+                                <div class="views">
+                                    <span class="circle">8</span>
+                                    views
+                                </div>
+                                <div class="answers">
+                                    <span class="circle filled">6</span>
+                                    answers
+                                </div>
+                                <div class="votes">
+                                    <span class="circle">19</span>
+                                    votes
+                                </div>
                             </div>
                         </div>
                         <div class="article-bottom">
                             <div class="tags">
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
+                                <div>
+                                    <button class="tag">apps</button>
+                                </div>
+                                <div>
+                                    <button class="tag">business</button>
+                                </div>
+                                <div>
+                                    <button class="tag">glass</button>
+                                </div>
+                                <div>
+                                    <button class="tag">google</button>
+                                </div>
+                                <div>
+                                    <button class="tag">tutorial</button>
+                                </div>
                             </div>
                             <div class="user"></div>
                         </div>
                     </article>
-                    <article class="question flex-container">
+                    <article class="question">
                         <div class="article-top">
-                            <div class="information"></div>
+                            <div class="information">
+                                <h3 class="truncate">
+                                    Lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut?
+                                </h3>
+                                <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum at tempor commodo ullamcorper a.</p>
+                            </div>
                             <div id="statistics">
-                                <element class="circle views"></element>
-                                <element class="circle answers"></element>
-                                <element class="circle votes"></element>
+                                <div class="views">
+                                    <span class="circle">8</span>
+                                    views
+                                </div>
+                                <div class="answers">
+                                    <span class="circle filled">6</span>
+                                    answers
+                                </div>
+                                <div class="votes">
+                                    <span class="circle">19</span>
+                                    votes
+                                </div>
                             </div>
                         </div>
                         <div class="article-bottom">
                             <div class="tags">
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
-                                <element>
-                                    <button class="tag"></button>
-                                </element>
+                                <div>
+                                    <button class="tag">apps</button>
+                                </div>
+                                <div>
+                                    <button class="tag">business</button>
+                                </div>
+                                <div>
+                                    <button class="tag">glass</button>
+                                </div>
+                                <div>
+                                    <button class="tag">google</button>
+                                </div>
+                                <div>
+                                    <button class="tag">tutorial</button>
+                                </div>
                             </div>
                             <div class="user"></div>
                         </div>
@@ -152,8 +217,26 @@
                 </section>
             </main>
             <aside class="right-side-bar">
-                <section class="statistics"></section>
-                <section class="most-used-tags"></section>
+                <section class="statistics">
+                    <div class="questions-count">
+                        <p>Questions</p>
+                        <p><span class="large-font">18</span></p>
+                    </div>
+                    <div class="members-count">
+                        <p>Members</p>
+                        <p><span class="large-font">12</span></p>
+                    </div>
+                </section>
+                <section class="most-used-tags">
+                    <h4>MOST USED TAGS</h4>
+                    <ul class="unstyled">
+                        <li><button class="tag">apps</button>x5</li>
+                        <li><button class="tag">business</button>x5</li>
+                        <li><button class="tag">glass</button>x5</li>
+                        <li><button class="tag">google</button>x5</li>
+                        <li><button class="tag">tutorial</button>x5</li>
+                    </ul>
+                </section>
                 <section class="hot-questions"></section>
             </aside>
             <footer class="footer"></footer>
