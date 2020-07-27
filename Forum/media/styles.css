@@ -6,18 +6,21 @@ body {
 
 .grid-container {
     display: grid;
+    grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
-    'header header header'
-    'menu main right'
-    'footer main right';
-    grid-template-columns: 16.6667% 66.6667% 16.6667%;
+    'header header header header header header'
+    'menu main main main main right'
+    'footer main main main main right';
 }
 
-.header { 
-    grid-area: header; 
+header { 
     background-color: #2f364a;
     min-height: 80px;
     max-width: 100%;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "logo search . . navbar login";
 }
 
 .flex-container {
@@ -26,33 +29,21 @@ body {
 }
 
 .logo {
-    flex-grow: 2;
-    position: relative;
-    width: 16.6667%;
-}
-
-.center {
-    flex-grow: 8;
-    width: 66.6667%;
+    grid-area: logo;
 }
 
 .search{
-    flex-grow: 5;
-    position: relative;
-    width: 75%;
+    align-items: search;
 }
 
 .navbar {
     background-color: #19202e;
     list-style: none;
-    text-align: center;
-    flex-grow: 3;
-    width: 25%;
+    grid-area: navbar;
 }
 
 .login {
-    flex-grow: 2;
-    width: 16.6667%;
+    grid-area: login;
 }
 
 .left-side-bar { 
