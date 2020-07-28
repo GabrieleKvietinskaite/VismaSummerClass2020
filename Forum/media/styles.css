@@ -64,16 +64,28 @@ header {
     height: 32px;
 }
 
+.social-fb:hover {
+    background-position: -41px -120px;
+}
+
 .social-twitter {
     background-position: -83px -78px; 
     width: 32px;
     height: 32px;
 }
 
+.social-twitter:hover {
+    background-position: -83px -120px;
+}
+
 .social-google {
     background-position: -167px -78px; 
     width: 32px;
     height: 32px;
+}
+
+.social-google:hover {
+    background-position: -167px -120px;
 }
 
 .social-networks {
