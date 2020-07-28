@@ -50,9 +50,38 @@ header {
 }
 
 .left-side-bar { 
-    grid-area: menu; 
+    grid-area: menu;
 }
 
+.social-fb, .social-twitter, .social-google {
+    background-image: url('../media/socialmediasprite.png');
+    background-repeat: no-repeat;
+}
+
+.social-fb {
+    background-position: -41px -78px; 
+    width: 32px;
+    height: 32px;
+}
+
+.social-twitter {
+    background-position: -83px -78px; 
+    width: 32px;
+    height: 32px;
+}
+
+.social-google {
+    background-position: -167px -78px; 
+    width: 32px;
+    height: 32px;
+}
+
+.social-networks {
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    border-bottom: 1px solid #dadfea;
+}
 
 .main { 
     grid-area: main; 
@@ -256,6 +285,7 @@ a {
 
 .left-side-menu {
     border-top: 1px solid #dadfea;
+    border-bottom: 1px solid #dadfea;
 }
 
 .most-used-tags ul li {
