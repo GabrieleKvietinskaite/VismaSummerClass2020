@@ -1,5 +1,10 @@
 function add(x) {
     return function(y) {
-        return x + y;
+        if(Number.isInteger(x) && Number.isInteger(y)){
+            return x + y;
+        }
+        else {
+            return "Wrong input";
+        }
     };
 }

@@ -3,27 +3,47 @@ function CalculatorA(initialValue){
 }
 
 CalculatorA.prototype.add = function (number) {
-    this.amount += number;
-
-    return this;
+    if(Number.isInteger(number)){
+        this.amount += number;
+    
+        return this;
+    }
+    else {
+        return "Wrong input";
+    }
 }
 
 CalculatorA.prototype.substract = function (number) {
-    this.amount -= number;
+    if(Number.isInteger(number)){
+        this.amount -= number;
     
-    return this;
+        return this;
+    }
+    else {
+        return "Wrong input";
+    }
 }
 
 CalculatorA.prototype.multiply = function (number) {
-    this.amount *= number;
+    if(Number.isInteger(number)){
+        this.amount *= number;
     
-    return this;
+        return this;
+    }
+    else {
+        return "Wrong input";
+    }
 }
 
 CalculatorA.prototype.divide = function (number) {
-    this.amount /= number;
+    if(Number.isInteger(number)){
+        this.amount /= number;
     
-    return this;
+        return this;
+    }
+    else {
+        return "Wrong input";
+    }
 }
 
 class CalculatorB {
@@ -32,26 +52,46 @@ class CalculatorB {
     }
 
     add(number){
-        this.amount += number;
-    
-        return this;
+        if(Number.isInteger(number)){
+            this.amount += number;
+        
+            return this;
+        }
+        else {
+            return "Wrong input";
+        }
     }
 
     substract(number){
-        this.amount -= number;
-    
-        return this;
+        if(Number.isInteger(number)){
+            this.amount -= number;
+        
+            return this;
+        }
+        else {
+            return "Wrong input";
+        }
     }
 
     multiply(number){
-        this.amount *= number;
-    
-        return this;
+        if(Number.isInteger(number)){
+            this.amount *= number;
+        
+            return this;
+        }
+        else {
+            return "Wrong input";
+        }
     }
 
     divide(number){
-        this.amount /= number;
-    
-        return this;
+        if(Number.isInteger(number)){
+            this.amount /= number;
+        
+            return this;
+        }
+        else {
+            return "Wrong input";
+        }
     }
 }

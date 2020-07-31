@@ -12,13 +12,23 @@ var houses = [
 ];
 
 function mottoA(name){
-    for(var i = 0; i < houses.length; i++){
-        if(houses[i].name == name){
-            return houses[i].motto;
+    if(typeof(name) === "string"){
+        for(var i = 0; i < houses.length; i++){
+            if(houses[i].name == name){
+                return houses[i].motto;
+            }
         }
+    }
+    else {
+        return "Wrong input";
     }
 }
 
 function mottoB(name) {
-    return houses.find(x => x.name == name).motto;
+    if(typeof(name) === "string"){
+        return houses.find(x => x.name == name).motto;
+    }
+    else {
+        return "Wrong input";
+    }
 }

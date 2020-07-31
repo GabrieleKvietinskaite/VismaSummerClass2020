@@ -1,5 +1,10 @@
 function say(x) {
     return function(y) {
-        return x + " " + y;
+        if(typeof(x) === "string" && typeof(y) === "string"){
+            return x + " " + y;
+        }
+        else {
+            return "Wrong input";
+        }
     };
 }
