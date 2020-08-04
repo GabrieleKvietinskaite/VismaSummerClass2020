@@ -1,0 +1,15 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "date": "2019-06-21",
+            "author": "Kasparas",
+            "title": "json-server",
+            "content": "typicode",
+            "tags": ["android", "google", "iphone"],
+            "views": 15,
+            "answers": 10,
+            "votes": 65
+        }
+    ]
+}
