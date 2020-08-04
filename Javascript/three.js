@@ -1,23 +1,21 @@
 function rangeA(x, y){
-    if(Number.isInteger(x) && Number.isInteger(y)){
-        var array = [];
-    
-        for(var i = x; i < y; i++){
-            array.push(i);
-        }
-    
-        return array;
-    }
-    else {
+    if(!Number.isInteger(x) || Number.isInteger(y)){
         return "Wrong input";
     }
+
+    let array = [];
+    
+    for(let i = x; i < y; i++){
+        array.push(i);
+    }
+
+    return array;
 }
 
 function rangeB(x, y){
-    if(Number.isInteger(x) && Number.isInteger(y)){
-        return [...Array(y - x).keys()].map(v => x + v);
+    if(!Number.isInteger(x) || Number.isInteger(y)){
+        return "Wrong input";  
     }
-    else {
-        return "Wrong input";
-    }
+
+    return [...Array(y - x).fill()].map(v, index=> x + index);
 }

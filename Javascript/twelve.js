@@ -95,3 +95,5 @@ class CalculatorB {
         }
     }
 }
+
+//atskira tikrinimo funkcija

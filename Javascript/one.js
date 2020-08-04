@@ -1,16 +1,16 @@
-var colors = require('colors');
+let colors = require("colors");
 
-var colorsList = [colors.red, colors.green, colors.yellow, colors.blue];
-var previousIndex = colorsList.length;
+let colorsList = [colors.red, colors.green, colors.yellow, colors.blue];
+let previousIndex = colorsList.length;
 
-for(var i = 0; i < 7; i++){
-    var newIndex = randomNumber(previousIndex);
-    console.log(colorsList[newIndex]('#'.repeat(i + 1)));
+for(let i = 0; i < 7; i++){
+    let newIndex = randomNumber(previousIndex);
+    console.log(colorsList[newIndex]("#".repeat(i + 1)));
     previousIndex = newIndex;
 }
 
 function randomNumber(previousNumber){
-    var number = previousNumber;
+    let number = previousNumber;
 
     while(number == previousNumber){
         number = Math.floor(Math.random() * colorsList.length);

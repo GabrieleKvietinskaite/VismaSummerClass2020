@@ -1,5 +1,5 @@
-for(var i = 1; i <= 100; i++){
-    var message = i.toString();
+for(let i = 1; i <= 100; i++){
+    let message = i.toString();
 
     if(i % 3 == 0 && i % 5 == 0){
         message = 'FizzBuzz';

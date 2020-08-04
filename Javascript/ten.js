@@ -1,17 +1,21 @@
 function spy(functionToSpy){
-    this.counter = 0;
+    let counter = 0;
 
-    return function(){
-        this.counter++;
+    let wrapper = function(){
+        counter++;
 
-        return functionToSpy.apply(this, arguments);
-    };
+        return functionToSpy(...arguments);
+    }
+
+    wrapper.report = () => {return {calls: counter}}
+    return wrapper;
 }
 
 function add(x, y){
     return x + y;
 }
 
-var spied = spy(add);
+let spied = spy(add);
+spied(1, 2);
 spied(1, 2);
 console.log(spied.report());

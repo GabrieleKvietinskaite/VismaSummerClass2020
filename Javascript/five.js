@@ -1,4 +1,4 @@
-var houses = [
+let houses = [
     {name: "Targaryen", motto: "Fire and Blood"},
     {name: "Stark", motto: "Winter is Coming"},
     {name: "Bolton", motto: "Our Blades Are Sharp"},
@@ -12,23 +12,23 @@ var houses = [
 ];
 
 function mottoA(name){
-    if(typeof(name) === "string"){
-        for(var i = 0; i < houses.length; i++){
-            if(houses[i].name == name){
-                return houses[i].motto;
-            }
-        }
-    }
-    else {
+    if(typeof(name) != "string"){
         return "Wrong input";
+    }
+
+    for(let i = 0; i < houses.length; i++){
+        if(houses[i].name == name){
+            return houses[i].motto;
+        }
     }
 }
 
 function mottoB(name) {
-    if(typeof(name) === "string"){
-        return houses.find(x => x.name == name).motto;
-    }
-    else {
+    if(typeof(name) != "string"){
         return "Wrong input";
     }
+
+    let result = houses.find(x => x.name == name);
+
+    return result ? result.motto : '';
 }
