@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="media/styles.css">
     </head>
-    <body>
+    <body onload="posts()">
         <div class="grid-container">
             <header>
                 <div class="logo"></div>
@@ -18,7 +18,7 @@
             </header>
             <aside class="left-side-bar">
                 <div id="ask-question-button">
-                    <button class="ask-question"></button>
+                    <button class="ask-question" onclick="location.href='/postForm.html'">ASK A QUESTION</button>
                 </div>
                 <div class="left-side-menu">
                     <ul class="unstyled">
