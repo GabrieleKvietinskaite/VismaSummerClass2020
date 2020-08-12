@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="media/styles.css">
+        <link rel="stylesheet" type="text/css" href="assets/styles.css">
     </head>
-    <body onload="posts()">
+    <body>
         <div class="grid-container">
             <header>
                 <div class="logo"></div>
@@ -18,7 +18,7 @@
             </header>
             <aside class="left-side-bar">
                 <div id="ask-question-button">
-                    <button class="ask-question" onclick="location.href='/postForm.html'">ASK A QUESTION</button>
+                    <a class="ask-question" href="/postForm.html">ASK A QUESTION</a>
                 </div>
                 <div class="left-side-menu">
                     <ul class="unstyled">
@@ -72,6 +72,6 @@
             </aside>
             <footer class="footer"></footer>
         </div>
-        <script src="js/index.js"></script>
+        <script type="module" defer src="index.js"></script>
     </body>
 </html>
