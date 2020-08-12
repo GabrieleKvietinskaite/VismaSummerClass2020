@@ -1,4 +1,5 @@
 const express = require('express');
+const jsonServer = require('json-server');
 const http = require('http');
 const app = express();
 const port = process.env.PORT || 3000;
@@ -16,6 +17,16 @@ app.get('/', (req, res) => {
 });
 */
 const server = http.createServer(app);
+
+app.use('/api', jsonServer.router('database/db.json'));
+app.use(jsonServer.bodyParser)
+app.use((req, res, next) => {
+  if (req.method === 'POST') {
+    req.body.createdAt = Date.now()
+  }
+  // Continue to JSON Server router
+  next()
+})
 
 server.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`)
