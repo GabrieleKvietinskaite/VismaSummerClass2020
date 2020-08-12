@@ -1,0 +1,33 @@
+header { 
+    background-color: #2f364a;
+    min-height: 80px;
+    max-width: 100%;
+    grid-area: header;
+    display: grid;
+    position: sticky;
+    top: 0;
+    z-index:100;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.search{
+    align-items: search;
+    margin: auto;
+}
+
+.search form input{
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: #19202e;
+    list-style: none;
+    grid-area: navbar;
+}
+
+.login {
+    grid-area: login;
+}
