@@ -9,34 +9,6 @@ body {
     flex-wrap: nowrap;
 }
 
-.all-questions {
-    width: 100%;
-    min-height: 40px;
-    border-bottom: 1pt solid #ced3db;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#filter-by-category {
-    width: 15%;
-    margin-right: 30px;
-}
-
-.filter {
-    width: 100%;
-    min-height: 40px;
-    border-bottom: 1pt solid#ced3db;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#chosen-per-page {
-    width: 7%;
-    margin-right: 30px;
-}
-
 .unstyled {
     list-style-type: none;
     padding: 0;
@@ -91,12 +63,12 @@ a {
         'main main main main';
     }
 
-    header { 
+    app-header { 
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: "logo navbar navbar login";
     }
 
-    .left-sidebar, .right-sidebar {
+    .left-sidebar, .right-sidebar, footer {
         display: none;
     }
 
@@ -114,12 +86,12 @@ a {
         'main main main main';
     }
 
-    header { 
+    app-header { 
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: "logo search navbar login";
     }
 
-    .left-sidebar, .right-sidebar {
+    .left-sidebar, .right-sidebar, footer {
         display: none;
     }
     
@@ -137,16 +109,15 @@ a {
         'footer main main main main right';
     }
 
-    header { 
+    app-header { 
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas: "logo search . . navbar login";
     }
 
-    .left-sidebar, .right-sidebar {
+    .left-sidebar, .right-sidebar, footer {
         display: block;
     }
 
-        
     .search {
         display: inline-block;
     }

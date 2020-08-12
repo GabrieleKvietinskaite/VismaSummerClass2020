@@ -1,4 +1,27 @@
-.main { 
-    grid-area: main; 
-    border-left: 1pt solid #ced3db;
+.all-questions {
+    width: 100%;
+    min-height: 40px;
+    border-bottom: 1pt solid #ced3db;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filter-by-category {
+    width: 15%;
+    margin-right: 30px;
+}
+
+.filter {
+    width: 100%;
+    min-height: 40px;
+    border-bottom: 1pt solid#ced3db;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chosen-per-page {
+    width: 7%;
+    margin-right: 30px;
 }

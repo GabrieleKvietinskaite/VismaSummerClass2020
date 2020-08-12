@@ -1,14 +1,3 @@
-header { 
-    background-color: #2f364a;
-    min-height: 80px;
-    max-width: 100%;
-    grid-area: header;
-    display: grid;
-    position: sticky;
-    top: 0;
-    z-index:100;
-}
-
 .logo {
     grid-area: logo;
 }

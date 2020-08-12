@@ -1,0 +1,33 @@
+header { 
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index:100;
+}
+
+app-header { 
+    background-color: #2f364a;
+    min-height: 80px;
+    max-width: 100%;
+    display: grid;
+}
+
+main { 
+    grid-area: main; 
+    border-left: 1pt solid #ced3db;
+}
+
+.left-sidebar { 
+    grid-area: menu;
+}
+
+.right-sidebar { 
+    grid-area: right; 
+    height: 100%;
+    background-color: #e1e7f0;
+    padding-left: 30px;
+}
+
+footer {
+    grid-area: footer;
+}
