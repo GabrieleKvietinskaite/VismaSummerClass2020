@@ -1,5 +1,5 @@
 .social-fb, .social-twitter, .social-google {
-    /*background-image: url('../assets/socialmediasprite.png');*/
+    background-image: url('../../../assets/socialmediasprite.png');
     background-repeat: no-repeat;
 }
 
@@ -41,25 +41,25 @@
     padding: 15px 0;
 }
 
-/*#left-menu-questions::before{
-    content: url(question.png);
+#left-menu-questions::before{
+    content: url(../../../assets/question.png);
 }
 
 #left-menu-tags::before{
-    content: url(tag.png);
+    content: url(../../../assets/tag.png);
 }
 
 #left-menu-badges::before{
-    content: url(award.png);
+    content: url(../../../assets/award.png);
 }
 
 #left-menu-categories::before{
-    content: url(list.png);
+    content: url(../../../assets/list.png);
 }
 
 #left-menu-users::before{
-    content: url(users.png);
-}*/
+    content: url(../../../assets/users.png);
+}
 
 .left-side-menu ul li {
     margin: 10px 0 10px 0;
