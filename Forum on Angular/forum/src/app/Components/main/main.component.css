@@ -1,4 +1,4 @@
-.all-questions {
+.all-posts {
     width: 100%;
     min-height: 40px;
     border-bottom: 1pt solid #ced3db;
@@ -24,4 +24,8 @@
 #chosen-per-page {
     width: 7%;
     margin-right: 30px;
+}
+
+.post:nth-child(odd) {
+    background-color: #eef1f7;
 }
