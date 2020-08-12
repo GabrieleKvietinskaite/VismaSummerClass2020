@@ -1,0 +1,93 @@
+.left-sidebar { 
+    grid-area: menu;
+}
+
+.social-fb, .social-twitter, .social-google {
+    /*background-image: url('../assets/socialmediasprite.png');*/
+    background-repeat: no-repeat;
+}
+
+.social-fb {
+    background-position: -41px -78px; 
+    width: 32px;
+    height: 32px;
+}
+
+.social-fb:hover {
+    background-position: -41px -120px;
+}
+
+.social-twitter {
+    background-position: -83px -78px; 
+    width: 32px;
+    height: 32px;
+}
+
+.social-twitter:hover {
+    background-position: -83px -120px;
+}
+
+.social-google {
+    background-position: -167px -78px; 
+    width: 32px;
+    height: 32px;
+}
+
+.social-google:hover {
+    background-position: -167px -120px;
+}
+
+.social-networks {
+    align-content: center;
+    justify-content: space-evenly;
+    display: flex;
+    border-bottom: 1px solid #dadfea;
+    padding: 15px 0;
+}
+
+/*#left-menu-questions::before{
+    content: url(question.png);
+}
+
+#left-menu-tags::before{
+    content: url(tag.png);
+}
+
+#left-menu-badges::before{
+    content: url(award.png);
+}
+
+#left-menu-categories::before{
+    content: url(list.png);
+}
+
+#left-menu-users::before{
+    content: url(users.png);
+}*/
+
+.left-side-menu ul li {
+    margin: 10px 0 10px 0;
+}
+
+.left-side-menu ul {
+    margin-left: 30px;
+}
+
+#ask-question-button {
+    margin: 30px;
+}
+
+.ask-question {
+    background-color: #008CBA;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    height: 45px;
+    display: block;
+    color: white;
+}
+
+.left-side-menu {
+    border-top: 1px solid #dadfea;
+    border-bottom: 1px solid #dadfea;
+}
