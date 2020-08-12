@@ -14,6 +14,6 @@ export class Post {
         this.content = content;
 
         let today = new Date();
-        this.date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        this.date = today.toLocaleDateString('LT');
     }
 }

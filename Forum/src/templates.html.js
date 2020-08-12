@@ -2,7 +2,7 @@ export const postHtml = (post) => `
     <article class="question">
         <div class="article-top">
             <div class="information">
-                <a href="/postForm.html?id=${post.id}&author=${post.author}&title=${post.title}&content=${post.content}">
+                <a href="/postForm.html?id=${post.id}">
                     <h3 class="truncate">${post.title}</h3>
                 </a>
                 <p class="truncate">${post.content}</p>
@@ -32,13 +32,9 @@ export const postHtml = (post) => `
 `
 
 export const tagsHtml = (tags) => {
-    let tagsHtml = '';
-
-    tags.forEach(tag => {
-        tagsHtml += `<div>
-                        <button class="tag">${tag}</button>
-                    </div>`;
+    return tags.map(tag => {
+        return `<div>
+            <button class="tag">${tag}</button>
+        </div>`;
     });
-
-    return tagsHtml;
 }

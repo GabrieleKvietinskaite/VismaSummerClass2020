@@ -1,4 +1,4 @@
-@import "../../components/posts/posts.css";
+@import "../components/posts/posts.css";
 
 body {
     margin: 0;
@@ -30,7 +30,7 @@ body {
 }
 
 .social-fb, .social-twitter, .social-google {
-    background-image: url('../media/socialmediasprite.png');
+    background-image: url('../assets/socialmediasprite.png');
     background-repeat: no-repeat;
 }
 
@@ -236,6 +236,10 @@ header {
 
 .grid-container {
     display: grid;
+}
+
+.hidden {
+    display: none;
 }
 
 @media only screen and (max-width: 768px){

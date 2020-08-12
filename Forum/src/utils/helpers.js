@@ -1,4 +1,4 @@
-export const params = (method, body = null) => {
+export const setParams = (method, body = null) => {
     return {
         headers: { "content-type": "application/json; charset=UTF-8" },
         body: JSON.stringify(body),
