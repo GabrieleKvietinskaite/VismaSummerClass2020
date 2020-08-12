@@ -9,11 +9,6 @@ body {
     flex-wrap: nowrap;
 }
 
-.main { 
-    grid-area: main; 
-    border-left: 1pt solid #ced3db;
-}
-
 .all-questions {
     width: 100%;
     min-height: 40px;
