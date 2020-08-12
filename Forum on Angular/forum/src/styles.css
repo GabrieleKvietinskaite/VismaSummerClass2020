@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    height: 100%;
+    color: #6f7d95;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.main { 
+    grid-area: main; 
+    border-left: 1pt solid #ced3db;
+}
+
+.all-questions {
+    width: 100%;
+    min-height: 40px;
+    border-bottom: 1pt solid #ced3db;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filter-by-category {
+    width: 15%;
+    margin-right: 30px;
+}
+
+.filter {
+    width: 100%;
+    min-height: 40px;
+    border-bottom: 1pt solid#ced3db;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chosen-per-page {
+    width: 7%;
+    margin-right: 30px;
+}
+
+.unstyled {
+    list-style-type: none;
+    padding: 0;
+}
+
+.large-font {
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.m-l-10 {
+    margin-left: 10px;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.hidden {
+    display: none;
+}
+
+.tag {
+    border: 1px solid #ced3db;
+    border-radius: 25px;
+    position: relative;
+    margin-right: 10px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.tag:hover {
+    opacity: 1
+}
+
+.tags {
+    margin-bottom: 25px;
+    display: flex;
+}
+
+@media only screen and (max-width: 768px){
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        'header header header header'
+        'main main main main'
+        'main main main main';
+    }
+
+    header { 
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "logo navbar navbar login";
+    }
+
+    .left-sidebar, .right-sidebar {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        'header header header header'
+        'main main main main'
+        'main main main main';
+    }
+
+    header { 
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "logo search navbar login";
+    }
+
+    .left-sidebar, .right-sidebar {
+        display: none;
+    }
+    
+    .search {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .grid-container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+        'header header header header header header'
+        'menu main main main main right'
+        'footer main main main main right';
+    }
+
+    header { 
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: "logo search . . navbar login";
+    }
+
+    .left-sidebar, .right-sidebar {
+        display: block;
+    }
+
+        
+    .search {
+        display: inline-block;
+    }
+}
