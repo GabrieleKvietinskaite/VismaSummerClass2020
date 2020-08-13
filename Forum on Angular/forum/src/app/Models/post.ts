@@ -7,4 +7,5 @@ export interface IPost {
   views: number;
   answers: number;
   votes: number;
+  id: number;
 }

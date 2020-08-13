@@ -32,7 +32,8 @@ export class CreatePostFormComponent implements OnInit {
       tags: [],
       views: 0,
       answers: 0,
-      votes: 0
+      votes: 0,
+      id: null
     };
 
     this.postService.createPost(post).subscribe(res => {
