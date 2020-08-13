@@ -54,6 +54,11 @@ a {
     display: flex;
 }
 
+label {
+    display: block;
+    width: 6em;
+}
+
 @media only screen and (max-width: 768px){
     .grid-container {
         grid-template-columns: repeat(4, 1fr);
