@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-post-form',
@@ -9,9 +9,9 @@ import { FormBuilder } from '@angular/forms';
 export class PostFormComponent implements OnInit {
 
   postForm = this.fb.group({
-    author: [''],
-    title: [''],
-    content: [''],
+    author: ['', Validators.required],
+    title: ['', Validators.required],
+    content: ['', Validators.required]
   });
 
   constructor(private fb: FormBuilder) { }
