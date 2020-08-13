@@ -9,6 +9,7 @@ import { RightSidebarComponent } from './Components/right-sidebar/right-sidebar.
 import { FooterComponent } from './Components/footer/footer.component';
 import { MainComponent } from './Components/main/main.component';
 import { PostComponent } from './components/post/post.component';
+import { PostsListComponent } from './components/posts-list/posts-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PostComponent } from './components/post/post.component';
     RightSidebarComponent,
     FooterComponent,
     MainComponent,
-    PostComponent
+    PostComponent,
+    PostsListComponent
   ],
   imports: [
     BrowserModule,
