@@ -23,6 +23,13 @@ export class PostService {
       catchError(this.handleError)
     )
   }
+
+  createPost(post): Observable<IPost> {
+    return this.httpClient.post<IPost>(this.apiServer + '/posts/', JSON.stringify(post), this.httpOptions)
+    .pipe(
+      catchError(this.handleError)
+    )
+  }  
   
   private handleError(error: HttpResponse<Error>) {
     return throwError(error);

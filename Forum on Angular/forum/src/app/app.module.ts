@@ -13,7 +13,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { MainComponent } from './Components/main/main.component';
 import { PostComponent } from './components/post/post.component';
 import { PostsListComponent } from './components/posts-list/posts-list.component';
-import { PostFormComponent } from './components/post-form/post-form.component';
+import { CreatePostFormComponent } from './Components/create-post-form/create-post-form.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { PostFormComponent } from './components/post-form/post-form.component';
     MainComponent,
     PostComponent,
     PostsListComponent,
-    PostFormComponent
+    CreatePostFormComponent
   ],
   imports: [
     BrowserModule,
