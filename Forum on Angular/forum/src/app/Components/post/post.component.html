@@ -1,21 +1,19 @@
 <div class="article-top">
     <div class="information">
-        <h3 class="truncate">
-            Lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut?
-        </h3>
-        <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum at tempor commodo ullamcorper a.</p>
+        <h3 class="truncate">{{ post.title }}</h3>
+        <p class="truncate">{{ post.content }}</p>
     </div>
     <div id="statistics">
         <div class="views">
-            <span class="circle">8</span>
+            <span class="circle">{{ post.views }}</span>
             views
         </div>
         <div class="answers">
-            <span class="circle filled">6</span>
+            <span class="circle filled">{{ post.answers }}</span>
             answers
         </div>
         <div class="votes">
-            <span class="circle">19</span>
+            <span class="circle">{{ post.votes }}</span>
             votes
         </div>
     </div>

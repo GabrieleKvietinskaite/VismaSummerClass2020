@@ -1,0 +1,10 @@
+.post:nth-child(odd) {
+    background-color: #eef1f7;
+}
+
+.post {
+    border-bottom: 1pt solid #ced3db;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+}
