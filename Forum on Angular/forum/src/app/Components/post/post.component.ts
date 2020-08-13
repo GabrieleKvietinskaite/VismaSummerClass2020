@@ -12,7 +12,6 @@ export class PostComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log("Labas" + this.post);
   }
 
 }
