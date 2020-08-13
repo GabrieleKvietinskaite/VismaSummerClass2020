@@ -14,6 +14,7 @@ import { MainComponent } from './Components/main/main.component';
 import { PostComponent } from './components/post/post.component';
 import { PostsListComponent } from './components/posts-list/posts-list.component';
 import { CreatePostFormComponent } from './Components/create-post-form/create-post-form.component';
+import { UpdatePostFormComponent } from './components/update-post-form/update-post-form.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CreatePostFormComponent } from './Components/create-post-form/create-po
     MainComponent,
     PostComponent,
     PostsListComponent,
-    CreatePostFormComponent
+    CreatePostFormComponent,
+    UpdatePostFormComponent
   ],
   imports: [
     BrowserModule,

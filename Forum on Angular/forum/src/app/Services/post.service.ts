@@ -24,12 +24,26 @@ export class PostService {
     )
   }
 
+  getPost(id): Observable<IPost> {
+    return this.httpClient.get<IPost>(this.apiServer + '/posts/' + id)
+    .pipe(
+      catchError(this.handleError)
+    )
+  }
+
   createPost(post): Observable<IPost> {
     return this.httpClient.post<IPost>(this.apiServer + '/posts/', JSON.stringify(post), this.httpOptions)
     .pipe(
       catchError(this.handleError)
     )
-  }  
+  } 
+  
+  updatePost(id, post): Observable<IPost> {
+    return this.httpClient.put<IPost>(this.apiServer + '/posts/' + id, JSON.stringify(post), this.httpOptions)
+    .pipe(
+      catchError(this.handleError)
+    )
+  }
   
   private handleError(error: HttpResponse<Error>) {
     return throwError(error);
