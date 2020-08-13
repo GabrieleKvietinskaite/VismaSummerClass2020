@@ -1,0 +1,15 @@
+<form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+    <label>
+        Author:
+        <input type="text" formControlName="author">
+    </label>
+    <label>
+        Title:
+        <input type="text" formControlName="title">
+    </label>
+    <label>
+        Content:
+        <textarea cols="30" rows="10" formControlName="content"></textarea>
+    </label>
+    <button type="submit" [disabled]="!postForm.valid">Submit</button>
+</form>

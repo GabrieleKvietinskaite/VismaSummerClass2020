@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { LeftSideBarComponent } from './Components/left-sidebar/left-sidebar.component';
@@ -10,6 +12,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { MainComponent } from './Components/main/main.component';
 import { PostComponent } from './components/post/post.component';
 import { PostsListComponent } from './components/posts-list/posts-list.component';
+import { PostFormComponent } from './components/post-form/post-form.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,14 @@ import { PostsListComponent } from './components/posts-list/posts-list.component
     FooterComponent,
     MainComponent,
     PostComponent,
-    PostsListComponent
+    PostsListComponent,
+    PostFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
