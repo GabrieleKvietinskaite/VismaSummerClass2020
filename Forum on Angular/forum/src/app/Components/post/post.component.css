@@ -1,14 +1,3 @@
-#posts {
-    width: 100%;
-}
-
-.post {
-    border-bottom: 1pt solid #ced3db;
-    flex-direction: column;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
 #statistics {
     justify-content: space-around;
     display: flex;
