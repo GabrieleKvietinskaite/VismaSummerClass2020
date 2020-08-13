@@ -44,6 +44,13 @@ export class PostService {
       catchError(this.handleError)
     )
   }
+
+  deletePost(id){
+    return this.httpClient.delete<IPost>(this.apiServer + '/posts/' + id, this.httpOptions)
+    .pipe(
+      catchError(this.handleError)
+    )
+  }
   
   private handleError(error: HttpResponse<Error>) {
     return throwError(error);

@@ -51,4 +51,10 @@ export class UpdatePostFormComponent implements OnInit {
       this.router.navigate(['/'])
     })
   }
+
+  deletePost(){
+    this.postService.deletePost(this.id).subscribe(data => {
+      this.router.navigate(['/'])
+    })
+  }
 }
