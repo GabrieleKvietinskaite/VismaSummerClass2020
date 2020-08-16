@@ -1,6 +1,5 @@
 #statistics {
     justify-content: space-around;
-    display: flex;
 }
 
 .circle {
@@ -9,22 +8,17 @@
     width: 50px;
     height: 50px;
     display: block;
-    text-align: center;
     line-height: 3.3;
 }
 
 .views, .answers, .votes {
     position: relative;
     margin-right: 25px;
-    text-align: center;
-    transform: rotate(1deg);
 }
 
 .article-top, .article-bottom {
     width: 100%;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .filled {

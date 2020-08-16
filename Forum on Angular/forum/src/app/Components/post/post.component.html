@@ -1,25 +1,25 @@
-<div class="article-top">
+<div class="article-top flex item-center">
     <div class="information">
         <h3 class="truncate">{{ post.title }}</h3>
         <p class="truncate">{{ post.content }}</p>
     </div>
-    <div id="statistics">
+    <div id="statistics" class="flex text-center">
         <div class="views">
             <span class="circle">{{ post.views }}</span>
-            views
+            <p>views</p>
         </div>
         <div class="answers">
             <span class="circle filled">{{ post.answers }}</span>
-            answers
+            <p>answers</p>
         </div>
         <div class="votes">
             <span class="circle">{{ post.votes }}</span>
-            votes
+            <p>votes</p>
         </div>
     </div>
 </div>
-<div class="article-bottom">
-    <div class="tags">
+<div class="article-bottom flex item-center">
+    <div class="tags flex">
         <div>
             <button class="tag">apps</button>
         </div>

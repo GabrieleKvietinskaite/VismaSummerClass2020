@@ -9,6 +9,10 @@ body {
     flex-wrap: nowrap;
 }
 
+.flex {
+    display: flex;
+}
+
 .unstyled {
     list-style-type: none;
     padding: 0;
@@ -22,6 +26,10 @@ body {
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 .m-l-10 {
@@ -51,7 +59,6 @@ a {
 
 .tags {
     margin-bottom: 25px;
-    display: flex;
 }
 
 label {
@@ -59,8 +66,36 @@ label {
     width: 6em;
 }
 
-a:hover {
-    cursor: pointer;
+.top-border {
+    border-top: 1px solid #dadfea;
+}
+
+#statistics p {
+    transform: rotate(1deg);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.form
+{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 768px){

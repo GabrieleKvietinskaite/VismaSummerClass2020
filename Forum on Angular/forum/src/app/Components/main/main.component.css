@@ -1,10 +1,7 @@
 .all-posts {
     width: 100%;
     min-height: 40px;
-    border-bottom: 1pt solid #ced3db;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 #filter-by-category {
@@ -15,10 +12,7 @@
 .filter {
     width: 100%;
     min-height: 40px;
-    border-bottom: 1pt solid#ced3db;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 #chosen-per-page {

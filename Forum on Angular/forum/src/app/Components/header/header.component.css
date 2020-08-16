@@ -13,7 +13,6 @@
 
 .navbar {
     background-color: #19202e;
-    list-style: none;
     grid-area: navbar;
 }
 
