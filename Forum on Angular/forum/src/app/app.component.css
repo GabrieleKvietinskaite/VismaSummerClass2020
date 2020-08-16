@@ -2,7 +2,7 @@ header {
     grid-area: header;
     position: sticky;
     top: 0;
-    z-index:100;
+    z-index:1;
 }
 
 app-header { 
@@ -19,6 +19,10 @@ main {
 
 .left-sidebar { 
     grid-area: menu;
+    position: fixed;
+    width: 16.67%;
+    height: 100%;
+    top: 80px;
 }
 
 .right-sidebar { 
