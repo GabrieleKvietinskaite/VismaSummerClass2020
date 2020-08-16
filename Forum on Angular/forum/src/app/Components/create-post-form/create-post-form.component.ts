@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, Validators, FormArray } from '@angular/forms';
 
 import { IPost } from 'src/app/Models/post.interface';
 import { PostService } from '../../Services/post.service';
@@ -16,12 +16,27 @@ export class CreatePostFormComponent {
     author: ['', Validators.required],
     title: ['', Validators.required],
     content: ['', Validators.required],
+    tags: this.fb.array([
+      this.fb.control('', Validators.required)
+    ])
   });
+
+  get tags() {
+    return this.createPostForm.get('tags') as FormArray;
+  }
 
   constructor(private fb: FormBuilder,
               private helpers: HelpersService,
               private postService: PostService,
               private constants: ConstantsService) { }
+
+  createTag() {
+    this.tags.push(this.fb.control('', Validators.required));
+  }
+
+  deleteTag(index) {
+    this.tags.removeAt(index);
+  }
 
   onSubmit() {
     const createPostFormControls = this.createPostForm.controls;
@@ -32,7 +47,7 @@ export class CreatePostFormComponent {
       date: this.constants.today,
       title: createPostFormControls.title.value, //ar šį
       content: createPostFormControls.content.value,
-      tags: [],
+      tags: createPostFormControls.tags.value,
       views: 0,
       answers: 0,
       votes: 0,
