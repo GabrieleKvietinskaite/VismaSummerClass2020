@@ -15,6 +15,8 @@ import { PostComponent } from './components/post/post.component';
 import { PostsListComponent } from './components/posts-list/posts-list.component';
 import { CreatePostFormComponent } from './Components/create-post-form/create-post-form.component';
 import { UpdatePostFormComponent } from './components/update-post-form/update-post-form.component';
+import { ConstantsService } from './Helpers/constants.service';
+import { HelpersService } from './Helpers/helpers.service';
 
 @NgModule({
   declarations: [
@@ -34,9 +36,8 @@ import { UpdatePostFormComponent } from './components/update-post-form/update-po
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule
-    
   ],
-  providers: [],
+  providers: [ConstantsService, HelpersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Validators, FormBuilder } from '@angular/forms';
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+
 import { PostService } from 'src/app/Services/post.service';
-import { IPost } from 'src/app/Models/post';
+import { IPost } from 'src/app/Models/post.interface';
+import { ConstantsService } from 'src/app/Helpers/constants.service';
+import { HelpersService } from 'src/app/Helpers/helpers.service';
 
 @Component({
   selector: 'app-update-post-form',
@@ -10,18 +13,19 @@ import { IPost } from 'src/app/Models/post';
   styleUrls: ['./update-post-form.component.css']
 })
 export class UpdatePostFormComponent implements OnInit {
-  post: IPost;
-  id = this.actRoute.snapshot.params['id'];
-  updatePostForm = this.fb.group({
+  private post: IPost;
+  private id = this.activatedRoute.snapshot.params['id'];
+  private updatePostForm = this.fb.group({
     author: ['', Validators.required],
     title: ['', Validators.required],
     content: ['', Validators.required],
   });
 
   constructor(private fb: FormBuilder,
-    private router: Router,
-    public actRoute: ActivatedRoute,
-    public postService: PostService) { }
+              private activatedRoute: ActivatedRoute,
+              private postService: PostService,
+              private constants: ConstantsService,
+              private helpers: HelpersService) { }
 
   ngOnInit() {
     this.postService.getPost(this.id).subscribe((data: IPost) => {
@@ -35,11 +39,13 @@ export class UpdatePostFormComponent implements OnInit {
   }
 
   onSubmit() {
+    const updatePostFormControls = this.updatePostForm.controls;
+
     const updatedPost: IPost = {
-      author: this.updatePostForm.controls.author.value,
-      date: new Date().toLocaleDateString('LT'),
-      title: this.updatePostForm.controls.title.value,
-      content: this.updatePostForm.controls.content.value,
+      author: updatePostFormControls.author.value,
+      date: this.constants.today,
+      title: updatePostFormControls.title.value,
+      content: updatePostFormControls.content.value,
       tags: [],
       views: 0,
       answers: 0,
@@ -48,13 +54,13 @@ export class UpdatePostFormComponent implements OnInit {
     };
 
     this.postService.updatePost(this.id, updatedPost).subscribe(data => {
-      this.router.navigate(['/'])
+      this.helpers.navigateHome();
     })
   }
 
   deletePost(){
     this.postService.deletePost(this.id).subscribe(data => {
-      this.router.navigate(['/'])
+      this.helpers.navigateHome();
     })
   }
 }

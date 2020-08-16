@@ -1,48 +1,37 @@
 {
-    "posts": [
-      {
-        "date": "2020-8-5",
-        "author": "Kasparas",
-        "title": "Nam tempus ante eget interdum ultrices. Ut id lacus a nulla accumsan tincidunt eget non.",
-        "content": "Aliquam commodo ex in odio pretium elementum. Etiam tortor est, sollicitudin nec aliquam sit amet, sagittis in nulla. Duis vulputate quam sed diam consequat egestas.",
-        "tags": [],
-        "views": 0,
-        "answers": 0,
-        "votes": 0,
-        "id": 1
-      },
-      {
-        "date": "2020-8-5",
-        "author": "Dalia",
-        "title": "Ut bibendum vestibulum est, quis egestas urna accumsan eu. Curabitur ut mauris sit amet risus.",
-        "content": "Morbi porta velit id diam pulvinar, sit amet rutrum velit ullamcorper. Sed laoreet, turpis eu tincidunt sagittis, sem eros sagittis tellus, at scelerisque magna magna non nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-        "tags": [],
-        "views": 0,
-        "answers": 0,
-        "votes": 0,
-        "id": 2
-      },
-      {
-        "date": "2020-8-5",
-        "author": "Lukas",
-        "title": "Ut eget massa tortor. Cras pharetra magna ligula, in aliquam magna semper vel. Donec molestie.",
-        "content": "Proin cursus mauris eu nibh consequat, vitae hendrerit magna varius. Sed placerat dignissim mi ac pellentesque. Sed pharetra vehicula metus, at egestas erat pellentesque non. In hac habitasse platea dictumst.",
-        "tags": [],
-        "views": 0,
-        "answers": 0,
-        "votes": 0,
-        "id": 3
-      },
-      {
-        "author": "",
-        "date": "2020-08-11",
-        "title": "",
-        "content": "",
-        "tags": [],
-        "views": 0,
-        "answers": 0,
-        "votes": 0,
-        "id": 4
-      }
-    ]
-  }
+  "posts": [
+    {
+      "date": "2020-8-5",
+      "author": "Kasparas",
+      "title": "Nam tempus ante eget interdum ultrices. Ut id lacus a nulla accumsan tincidunt eget non.",
+      "content": "Aliquam commodo ex in odio pretium elementum. Etiam tortor est, sollicitudin nec aliquam sit amet, sagittis in nulla. Duis vulputate quam sed diam consequat egestas.",
+      "tags": [],
+      "views": 0,
+      "answers": 0,
+      "votes": 0,
+      "id": 1
+    },
+    {
+      "date": "2020-8-5",
+      "author": "Dalia",
+      "title": "Ut bibendum vestibulum est, quis egestas urna accumsan eu. Curabitur ut mauris sit amet risus.",
+      "content": "Morbi porta velit id diam pulvinar, sit amet rutrum velit ullamcorper. Sed laoreet, turpis eu tincidunt sagittis, sem eros sagittis tellus, at scelerisque magna magna non nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "tags": [],
+      "views": 0,
+      "answers": 0,
+      "votes": 0,
+      "id": 2
+    },
+    {
+      "date": "2020-8-5",
+      "author": "Lukas",
+      "title": "Ut eget massa tortor. Cras pharetra magna ligula, in aliquam magna semper vel. Donec molestie.",
+      "content": "Proin cursus mauris eu nibh consequat, vitae hendrerit magna varius. Sed placerat dignissim mi ac pellentesque. Sed pharetra vehicula metus, at egestas erat pellentesque non. In hac habitasse platea dictumst.",
+      "tags": [],
+      "views": 0,
+      "answers": 0,
+      "votes": 0,
+      "id": 3
+    }
+  ]
+}
