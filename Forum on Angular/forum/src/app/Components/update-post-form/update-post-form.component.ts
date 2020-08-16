@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Validators, FormBuilder } from '@angular/forms';
+import { Validators, FormBuilder, FormArray } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
 import { PostService } from 'src/app/Services/post.service';
@@ -19,7 +19,12 @@ export class UpdatePostFormComponent implements OnInit {
     author: ['', Validators.required],
     title: ['', Validators.required],
     content: ['', Validators.required],
+    tags: this.fb.array([])
   });
+
+  get tags() {
+    return this.updatePostForm.get('tags') as FormArray;
+  }
 
   constructor(private fb: FormBuilder,
               private activatedRoute: ActivatedRoute,
@@ -35,7 +40,23 @@ export class UpdatePostFormComponent implements OnInit {
         title: this.post.title,
         content: this.post.content
       });
+      this.post.tags.forEach(tag => {
+        this.addTag(tag);
+      })
     })
+  }
+
+  createTag() {
+    this.tags.push(this.fb.control('', Validators.required));
+  }
+
+  addTag(tag){
+    this.tags.push(this.fb.control(tag, Validators.required));
+  }
+
+  deleteTag(index) {
+    console.log(this.tags);
+    this.tags.removeAt(index);
   }
 
   onSubmit() {
@@ -46,7 +67,7 @@ export class UpdatePostFormComponent implements OnInit {
       date: this.constants.today,
       title: updatePostFormControls.title.value,
       content: updatePostFormControls.content.value,
-      tags: [],
+      tags: updatePostFormControls.tags.value,
       views: 0,
       answers: 0,
       votes: 0,
