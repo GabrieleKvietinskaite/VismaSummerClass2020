@@ -20,20 +20,8 @@
 </div>
 <div class="article-bottom flex item-center">
     <div class="tags flex">
-        <div>
-            <button class="tag">apps</button>
-        </div>
-        <div>
-            <button class="tag">business</button>
-        </div>
-        <div>
-            <button class="tag">glass</button>
-        </div>
-        <div>
-            <button class="tag">google</button>
-        </div>
-        <div>
-            <button class="tag">tutorial</button>
+        <div  *ngFor="let tag of post.tags; let i=index">
+            <button class="tag">{{ post.tags[i] }}</button>
         </div>
     </div>
     <div class="user"></div>
