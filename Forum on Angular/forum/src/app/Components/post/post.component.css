@@ -9,6 +9,7 @@
     height: 50px;
     display: block;
     line-height: 3.3;
+    margin-top: 30px;
 }
 
 .views, .answers, .votes {
