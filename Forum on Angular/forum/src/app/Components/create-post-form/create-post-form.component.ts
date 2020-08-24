@@ -9,7 +9,7 @@ import { HelpersService } from 'src/app/Helpers/helpers.service';
 @Component({
   selector: 'app-create-post-form',
   templateUrl: './create-post-form.component.html',
-  styleUrls: ['./create-post-form.component.css']
+  styleUrls: ['./create-post-form.component.scss']
 })
 export class CreatePostFormComponent {
   private createPostForm = this.fb.group({

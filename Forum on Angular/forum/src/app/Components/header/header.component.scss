@@ -1,0 +1,19 @@
+.logo {
+	grid-area: logo;
+}
+.search {
+	align-items: search;
+	margin: auto;
+	form {
+		input {
+			font-size: 16px;
+		}
+	}
+}
+.navbar {
+	background-color: #19202e;
+	grid-area: navbar;
+}
+.login {
+	grid-area: login;
+}

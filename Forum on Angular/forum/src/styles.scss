@@ -1,0 +1,146 @@
+body {
+	margin: 0;
+	height: 100%;
+	color: #6f7d95;
+}
+.flex-container {
+	display: flex;
+	flex-wrap: nowrap;
+}
+.flex {
+	display: flex;
+}
+.unstyled {
+	list-style-type: none;
+	padding: 0;
+}
+.large-font {
+	color: #2c3e50;
+	font-weight: 700;
+	font-size: 50px;
+}
+a {
+	text-decoration: none;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.m-l-10 {
+	margin-left: 10px;
+}
+.grid-container {
+	display: grid;
+}
+.hidden {
+	display: none;
+}
+.tag {
+	border: 1px solid #ced3db;
+	border-radius: 25px;
+	position: relative;
+	margin-right: 10px;
+	opacity: 0.6;
+	transition: 0.3s;
+	&:hover {
+		opacity: 1;
+	}
+}
+.tags {
+	margin-bottom: 25px;
+}
+label {
+	display: block;
+	width: 6em;
+}
+.top-border {
+	border-top: 1px solid #dadfea;
+}
+#statistics {
+	p {
+		transform: rotate(1deg);
+	}
+}
+.text-center {
+	text-align: center;
+}
+.item-center {
+	align-items: center;
+}
+.form {
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+}
+form {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	font-size: 20px;
+}
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: 'header header header header' 'main main main main' 'main main main main';
+	}
+	app-header {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: "logo navbar navbar login";
+	}
+	.left-sidebar {
+		display: none;
+	}
+	.right-sidebar {
+		display: none;
+	}
+	footer {
+		display: none;
+	}
+	.search {
+		display: none;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.grid-container {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: 'header header header header' 'main main main main' 'main main main main';
+	}
+	app-header {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: "logo search navbar login";
+	}
+	.left-sidebar {
+		display: none;
+	}
+	.right-sidebar {
+		display: none;
+	}
+	footer {
+		display: none;
+	}
+	.search {
+		display: inline-block;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.grid-container {
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-areas: 'header header header header header header' 'menu main main main main right' 'footer main main main main right';
+	}
+	app-header {
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-areas: "logo search . . navbar login";
+	}
+	.left-sidebar {
+		display: block;
+	}
+	.right-sidebar {
+		display: block;
+	}
+	footer {
+		display: block;
+	}
+	.search {
+		display: inline-block;
+	}
+}

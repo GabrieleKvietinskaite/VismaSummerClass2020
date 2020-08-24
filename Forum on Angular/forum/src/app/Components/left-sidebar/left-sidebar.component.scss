@@ -1,0 +1,79 @@
+.social-fb {
+	background-image: url('../../../assets/socialmediasprite.png');
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
+	background-position: -41px -78px;
+	&:hover {
+		background-position: -41px -120px;
+	}
+}
+.social-twitter {
+	background-image: url('../../../assets/socialmediasprite.png');
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
+	background-position: -83px -78px;
+	&:hover {
+		background-position: -83px -120px;
+	}
+}
+.social-google {
+	background-image: url('../../../assets/socialmediasprite.png');
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
+	background-position: -167px -78px;
+	&:hover {
+		background-position: -167px -120px;
+	}
+}
+.social-networks {
+	justify-content: space-evenly;
+	padding: 15px 0;
+}
+#left-menu-questions {
+	&::before {
+		content: url(../../../assets/question.png);
+	}
+}
+#left-menu-tags {
+	&::before {
+		content: url(../../../assets/tag.png);
+	}
+}
+#left-menu-badges {
+	&::before {
+		content: url(../../../assets/award.png);
+	}
+}
+#left-menu-categories {
+	&::before {
+		content: url(../../../assets/list.png);
+	}
+}
+#left-menu-users {
+	&::before {
+		content: url(../../../assets/users.png);
+	}
+}
+.left-side-menu {
+	ul {
+		li {
+			margin: 10px 0 10px 0;
+		}
+		margin-left: 30px;
+	}
+}
+#ask-question-button {
+	margin: 30px;
+}
+.ask-question {
+	background-color: #008CBA;
+	border: none;
+	border-radius: 3px;
+	width: 100%;
+	height: 45px;
+	color: white;
+	justify-content: center;
+}

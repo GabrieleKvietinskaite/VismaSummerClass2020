@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-left-sidebar',
   templateUrl: './left-sidebar.component.html',
-  styleUrls: ['./left-sidebar.component.css']
+  styleUrls: ['./left-sidebar.component.scss']
 })
 export class LeftSideBarComponent {
   constructor(private router: Router) { }

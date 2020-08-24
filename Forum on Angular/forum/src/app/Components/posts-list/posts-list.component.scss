@@ -1,0 +1,8 @@
+.post {
+	&:nth-child(odd) {
+		background-color: #eef1f7;
+	}
+	flex-direction: column;
+	padding-left: 30px;
+	padding-right: 30px;
+}

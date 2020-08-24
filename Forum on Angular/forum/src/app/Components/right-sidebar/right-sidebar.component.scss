@@ -1,0 +1,25 @@
+.members-count {
+	border-left: 4px solid #f39c12;
+	line-height: .7;
+	padding-left: 10px;
+}
+.questions-count {
+	border-left: 4px solid #3498db;
+	margin-bottom: 30px;
+	line-height: .7;
+	padding-left: 10px;
+}
+.most-used-tags {
+	h4 {
+		color: #2c3e50;
+		border-bottom: 1px solid #dadfea;
+		padding-bottom: 10px;
+		margin-bottom: 15px;
+	}
+	margin-top: 45px;
+	ul {
+		li {
+			margin-bottom: 10px;
+		}
+	}
+}

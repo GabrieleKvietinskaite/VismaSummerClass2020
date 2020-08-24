@@ -10,7 +10,7 @@ import { HelpersService } from 'src/app/Helpers/helpers.service';
 @Component({
   selector: 'app-update-post-form',
   templateUrl: './update-post-form.component.html',
-  styleUrls: ['./update-post-form.component.css']
+  styleUrls: ['./update-post-form.component.scss']
 })
 export class UpdatePostFormComponent implements OnInit {
   private post: IPost;
