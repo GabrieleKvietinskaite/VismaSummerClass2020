@@ -8,8 +8,4 @@ export class HelpersService {
   public navigateHome(){
     this.router.navigate(['/'])
   }
-
-  public getFormFieldValue(field){
-    return field.value;
-  }
 }

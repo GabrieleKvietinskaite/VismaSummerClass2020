@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class LeftSideBarComponent {
   constructor(private router: Router) { }
 
-  redirectToCreateForm() {
+  public redirectToCreateForm() {
     this.router.navigateByUrl('create');
   }
 }

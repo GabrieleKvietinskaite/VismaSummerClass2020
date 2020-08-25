@@ -5,6 +5,7 @@ import { IPost } from 'src/app/Models/post.interface';
 import { PostService } from '../../Services/post.service';
 import { ConstantsService } from 'src/app/Helpers/constants.service';
 import { HelpersService } from 'src/app/Helpers/helpers.service';
+import { PostFormService } from 'src/app/Services/post-form-service';
 
 @Component({
   selector: 'app-create-post-form',
@@ -12,14 +13,7 @@ import { HelpersService } from 'src/app/Helpers/helpers.service';
   styleUrls: ['./create-post-form.component.scss']
 })
 export class CreatePostFormComponent {
-  private createPostForm = this.fb.group({
-    author: ['', Validators.required],
-    title: ['', Validators.required],
-    content: ['', Validators.required],
-    tags: this.fb.array([
-      this.fb.control('', Validators.required)
-    ])
-  });
+  private createPostForm = this.postFormService.generateEmptyFrom();
 
   get tags() {
     return this.createPostForm.get('tags') as FormArray;
@@ -28,26 +22,25 @@ export class CreatePostFormComponent {
   constructor(private fb: FormBuilder,
               private helpers: HelpersService,
               private postService: PostService,
-              private constants: ConstantsService) { }
+              private constants: ConstantsService,
+              private postFormService: PostFormService) { }
 
-  createTag() {
+  public createTag() {
     this.tags.push(this.fb.control('', Validators.required));
   }
 
-  deleteTag(index) {
+  public deleteTag(index) {
     this.tags.removeAt(index);
   }
 
-  onSubmit() {
-    const createPostFormControls = this.createPostForm.controls;
-
-    //Kurį būdą geriau naudoti?
+  public onSubmit() {
+    const createPostForm = this.createPostForm.getRawValue();
     const post: IPost = {
-      author: this.helpers.getFormFieldValue(createPostFormControls.author), //šį
+      author: createPostForm.author,
       date: this.constants.today,
-      title: createPostFormControls.title.value, //ar šį
-      content: createPostFormControls.content.value,
-      tags: createPostFormControls.tags.value,
+      title: createPostForm.title,
+      content: createPostForm.content,
+      tags: createPostForm.tags,
       views: 0,
       answers: 0,
       votes: 0,

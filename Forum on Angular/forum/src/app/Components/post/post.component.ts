@@ -14,7 +14,7 @@ export class PostComponent {
   
   constructor(private router: Router) { }
 
-  redirectToUpdateForm() {
+  public redirectToUpdateForm() {
     this.router.navigateByUrl(`/update/${this.post.id}`);
   }
 }

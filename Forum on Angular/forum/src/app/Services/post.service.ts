@@ -32,12 +32,12 @@ export class PostService {
   }
 
   public createPost(post): Observable<IPost> {
-    return this.httpClient.post<IPost>(this.apiServer + '/posts/', JSON.stringify(post), this.httpOptions)
+    return this.httpClient.post<IPost>(this.apiServer + '/posts/', post, this.httpOptions)
                           .pipe(catchError(this.handleError))
   } 
   
   public updatePost(id, post): Observable<IPost> {
-    return this.httpClient.put<IPost>(this.apiServer + `/posts/${id}`, JSON.stringify(post), this.httpOptions)
+    return this.httpClient.put<IPost>(this.apiServer + `/posts/${id}`, post, this.httpOptions)
                           .pipe(catchError(this.handleError))
   }
 
