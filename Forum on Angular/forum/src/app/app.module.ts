@@ -18,6 +18,13 @@ import { UpdatePostFormComponent } from './components/update-post-form/update-po
 import { ConstantsService } from './Helpers/constants.service';
 import { HelpersService } from './Helpers/helpers.service';
 
+import { StoreModule } from '@ngrx/store';
+import * as PostState from './Store/post.reducers';
+import { EffectsModule } from '@ngrx/effects';
+import { PostEffects } from './Store/post.effects';
+import { environment } from 'src/environments/environment';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,13 +36,20 @@ import { HelpersService } from './Helpers/helpers.service';
     PostComponent,
     PostsListComponent,
     CreatePostFormComponent,
-    UpdatePostFormComponent
+    UpdatePostFormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot({}),
+    EffectsModule.forRoot([]),
+    StoreModule.forFeature(
+      PostState.postStateFeatureKey,
+      PostState.reducers
+    ),
+    EffectsModule.forFeature([PostEffects])
   ],
   providers: [ConstantsService, HelpersService],
   bootstrap: [AppComponent]
