@@ -22,8 +22,6 @@ import { StoreModule } from '@ngrx/store';
 import * as PostState from './Store/post.reducers';
 import { EffectsModule } from '@ngrx/effects';
 import { PostEffects } from './Store/post.effects';
-import { environment } from 'src/environments/environment';
-import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 @NgModule({
   declarations: [
